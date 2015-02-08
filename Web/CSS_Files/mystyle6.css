@@ -1,0 +1,129 @@
+html, body {
+	margin: 0px;
+	padding:0px;
+	border:0px;
+    width: 100%;
+    height: 100%;
+	
+		 }
+#Header{
+position:relative;
+width:110%;
+top:0px;
+left:-9px;
+}
+
+		 
+#MainStrip {
+
+position:relative;
+ top:0px;
+ left:-0px;
+			font-family:"Myriad Pro";
+			font-size:13pt;
+			margin: 0px;
+			padding:9px;
+			border:0px;
+			list-style-type:none;
+			height:17.5px;
+			background-color:#008080;
+			color:#d4d1d1;
+			
+		   }	
+#ContentArea {
+position:relative;
+ top:-150px;
+ left:-0px;
+margin-right:200px;
+margin-left:200px;
+
+			 }
+#NavigationBar{
+position:absolute;
+                       top:200px;
+                left:305px;
+
+
+
+}		 
+a:link {color:black;text-decoration:none;}  
+a:visited {color:black;} 
+a:hover {color:#070707;}  
+a:active {color:#d4d1d1;} 
+a:active {background-color:#d4d1d1;}
+
+
+
+
+.border {
+
+margin-right:205px;
+margin-left:215px;
+
+        }
+.Footer{
+position:relative;
+top:720px;
+margin-right:200px;
+margin-left:210px;
+
+
+		}
+		   
+		   
+#OptionList{
+
+		width:80%;
+		margin-right:auto;
+		margin-left:auto;
+		position:absolute;
+		top:800px;
+                left:125px;
+		text-align:left;
+		
+
+          }	
+		 
+#CenterGrid{
+
+position:absolute;
+  top:400px;
+  
+
+
+               
+
+           }	
+		   
+		   
+.greencolor{
+font-family:"Mongolian Baiti";
+		font-size:14pt;
+		color:#317e76;
+
+			}
+.greycolor{
+			font-family:"Mongolian Baiti";
+		font-size:24pt;
+		color:#6b7b7b;
+                
+			
+			}
+			
+			#FacebookStrip{
+			position:absolute;
+                       top:810px;
+                left:100px;
+
+
+font-family:"Mongolian Baiti";
+		font-size:14pt;
+		color:#317e76;
+                                      }
+
+
+			#Footer{
+			position:absolute;
+                        top:1030px;
+                        left:300px;
+                        }

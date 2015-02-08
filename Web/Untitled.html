@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Exhibition</title>
+	<link rel="stylesheet" type="text/css" href="CSS_Files/mystyle2.css">
+	
+		<script>
+	function imgChange (img)
+	{
+		x=document.getElementById("rollimg");
+		x.src= img;
+	}
+	
+	function setCookie(c_name,value,exdays)	
+	{
+		var exdate=new Date();
+		exdate.setDate(exdate.getDate() + exdays);
+		var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+		document.cookie=c_name + "=" + c_value;
+	}
+	function getCookie(c_name)
+	{
+	var i,x,y,ARRcookies=document.cookie.split(";");
+		for (i=0;i<ARRcookies.length;i++)
+		{
+			x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+			y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+			x=x.replace(/^\s+|\s+$/g,"");
+			if (x==c_name)
+				{
+					return unescape(y);
+				}
+		}
+	}
+	function checkCookie()
+	{
+	var username=getCookie("username");
+	if (username!=null && username!="")
+	{
+		document.getElementById("log").innerHTML="logout |";
+	}	
+	}
+	function erase()
+	{
+		var username=getCookie("username");
+			if (username!=null && username!="")
+			{
+			setCookie("username","ahmed",-600);
+			document.getElementById("log").innerHTML="Login |";
+			}	
+	}
+	</script>
+		
+</head>
+<body onload="checkCookie()">
+<link rel="SHORTCUT ICON" href="img/ThumbnailLogo.ico">
+<!-- This is the top part of the website-->
+	<div id="Header">
+		<div id="MainStrip">
+			<ul id="MainStrip">
+				<li style="display:inline;margin-left:215px;align:center;margin-bottom:10px;"><a href="#about">Profile</a></li>
+                 <li style="display:inline">|</li>
+<li style="display:inline"><a href="#about">Groups</a></li>
+				<li style="display:inline;float:right;align:center;margin-bottom:10px;position:absolute;right:183px;}"><a href="#about"><a href="Help.html">Help</a></li>
+				<li style="display:inline;float:right;position:absolute;right:220px;"><a href="login.html" id="log" onClick="erase()">Login |</a></li>
+				<li style="display:inline;float:right;position:absolute;right:270px;"><a href="#about"><a href="Regstration.html">Register |</a></li>
+				<li style="display:inline;float:right;position:absolute;right:340px;">Welcome |</li>
+			</ul>
+	    </div>
+		
+		<div class="border">
+			<input id="SearchBar" type="search" placeholder="Explore The Scape" style="float:right;border:4px solid gray;position:relative;top:8px;left:50px;">
+		</div>
+		<div id="ShoppingCart"></div>
+		<div class="border"><img src="img/Logo.jpg" alt="Filmscape" style="position:absolute;top:110px;"></div>
+	</div>
+	
+	<!--This is the content area-->
+	<div id="ContentArea">
+        <div id="CenterGrid2">
+            <table border="0" Style="border-style:solid;border-width:1px; padding:25px; width:100%">
+		
+		<caption style="float:right">Latest DVD's</caption>
+		<tr>
+			<td Style="font-size:30px"><img src="img/book1.jpg" height="300" width="200" alt="MOON"></td>
+			<td Style="font-size:30px"><img src="img/book2.png" height="300" width="200" alt="MOON"></td>
+			<td Style="font-size:30px"><img src="img/book3.jpg" height="300" width="200" alt="MOON"></td>
+		</tr>
+		<tr>
+			<td>Chicago</td>
+			<td>The Last Wild</td>
+			<td>Emma</td>
+		</tr>
+		<tr>
+			<td>View Book</td>
+			<td>View Book</td>
+			<td>View Book</td>
+		</tr>
+		<tr>
+			<td>Start Reading</td>
+			<td>Start Reading</td>
+			<td>Start Reading</td>
+		</tr>
+	</table>
+            
+        </div>
+	
+		<div id="CenterGrid">
+				
+				
+		
+		<div id="FacebookStrip" style="float:right;float:top;margin-right:90px;align:center;margin-top:-160px;">
+			<hr>
+				<ul>
+					<li style="display:inline;float:left;">
+					<img id="rollimg" src="img/ThumbnailLogo.PNG" width="60 height="8 onmouseover="imgChange ('img/ThumbnailLogo2.png')"
+					onmouseout="imgChange ('img/ThumbnailLogo.PNG')"/>
+					</li>
+					<li style="display:inline;float:left;">
+						<table><tr><td>Filmscape on Facebook</td></tr>
+								<tr><td><a href="https://www.facebook.com/pages/Filmscape/370149656406270?fref=tck"><img src="img/Filmscape-colors-About-us_45.gif"></a></td></tr>
+						</table>
+					</li>
+<li style="display:inline;float:right;margin-right:100px;align:center;">We like you, It's only fitting to like us back.</li>
+<li style="display:inline;"><li style="display:inline;"><HR width=1 size="50"></li></li>
+				</ul>
+				<hr width="870" style="float:left;">
+		</div>
+		<div id="OptionList"style="float:bottom;align:center;margin-bottom:10px;">
+		<table>	
+			<tr>
+			<td>
+			<ul style="list-style-type:none">
+				<li class="greycolor"><b>Scape</b></li></br>
+				<li class="greencolor">Movies</li>
+				</br>
+				<li class="greencolor">Tv</li>
+				</br>
+				<li class="greencolor">Actors</li>
+				</br>
+				<li class="greencolor">Directors</li>
+				</br>
+				<li class="greencolor">Trailers</li>
+				</br>
+				<li class="greencolor">News</li>
+				</br>
+			</ul>
+			</td>
+			<td>				
+			<ul style="list-style-type:none">
+				<li class="greencolor"><b class="greycolor">Exhibition</b></li></br>
+				<li class="greencolor">DVD's</li>
+				</br>
+				<li class="greencolor">Blu-Rays</li>
+				</br>
+				<li class="greencolor">Posters</li>
+				</br>
+				<li class="greencolor">Replicas</li>
+				</br>
+				<li class="greencolor">Art</li>
+				</br>
+				<li class="greencolor">Autographs</li>
+				</br>
+			</ul>
+			</td>
+			<td>
+			<ul style="list-style-type:none">
+				<li class="greycolor"><b>Community</b></li></br>
+				<li class="greencolor">Forum</li>
+				</br>
+				<li class="greencolor">Reviews</li>
+				</br>
+				<li class="greencolor">Movie Challenges</li>
+				</br>
+				<li class="greencolor">vote</li>
+				</br>
+				<li class="greencolor">FAQ</li>
+				</br>
+				<li class="greencolor">Chat</li>
+				</br>
+			</ul>
+			</td>
+			<td>	
+			<ul style="list-style-type:none">
+				<li class="greycolor"><b>Info</b></li></br>
+				<li class="greencolor"><a href="http://film-scape.tumblr.com/">Scapestaff Blog</li>
+				</br>
+				<li class="greencolor">About Us</li>
+				</br>
+				<li class="greencolor">Retail Stores</li>
+				</br>
+				<li class="greencolor">Wholesale</li>
+				</br>
+				<li class="greencolor">Help</li>
+				</br>
+				<li class="greencolor">Contact Us</li>
+				</br>
+			</ul>
+			</td>
+		</table>		
+		</div>
+	</div>
+	
+	<div id="Footer">
+	<hr width="850">
+	<ul>
+	<table>
+			<li style="display:inline;float:left;"><table><tr><td>
+				<a href="http://twitter.com"><img src="img/FilmscapeAbout-us_133.gif"></a></td><td>
+				<a href="http://plus.google.com"><img src="img/FilmscapeAbout-us_135.gif"></a></td><td><a href="http://www.facebook.com/"><img src="img/FilmscapeAbout-us_137.gif"></a></td><td>
+				<img src="img/FilmscapeAbout-us_126.gif"></td><td><a href="http://www.stumbleupon.com/"><img src="img/FilmscapeAbout-us_129.gif"></a></td><td>
+				<a href="http://www.myspace.com"><img src="img/FilmscapeAbout-us_131.gif"></a></td><td><img src="img/FilmscapeAbout-us_123.gif"></td></tr>
+	</table>
+</li>
+<li style="display:inline;"><table><tr><td>ɲ012,a scope company,All rights registered,Privacy Policy,Terms of use.</td></tr></table></li></table>
+</ul>
+
+
+	
+	
+	</div>
+		
+		
+</body>
+</html>
+
+
+	
+	
